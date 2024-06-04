@@ -1,0 +1,92 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    string name;
+    string ready;
+    string Yes;
+    int marks,loopcount,credentials;
+    string gender;
+    string title;
+
+    cout << "Hi there! how should I call You? ";
+    getline (cin,name);
+    cout << "Please choose your Gender; M or F";
+    cin >> gender ;
+      if (gender == "M"||"m" )
+         {
+          title = "Mr.";
+         }
+         else { title ="Miss.";}
+
+
+
+    cout << "Akwaaba, " << title<<" " <<name << endl;
+
+    cout << " W e would Like To  Load  Your  Data  from  our  S e r v e r s..." << endl ;
+    cout << " To Give Access,  Enter Your Your Credentials :" ;
+    cin >> credentials;
+        if (credentials != 00000)
+
+        {
+
+
+         for(int i=2000;  i>0; i--)
+             {
+            cout<<"10101010101010101010101010101010101010101001010010101010101010101010101010101010101010"<< endl ;
+              }
+        }
+
+    cout<<" "<< endl ;
+
+    cout<<"We are Ready"<< endl;
+
+    cout<<" "<< endl ;
+
+    cout << "Are you Ready to see your Results? Yes or No : ";
+    cin >> ready;
+    cout<<" "<< endl ;
+    cout << "You are Brave. Mr." << name <<" Enter Your Marks :"<< endl ;
+    cin>> marks;
+
+
+
+    if (ready=="Yes")
+        {
+
+     if (marks>=70)
+               {
+                   cout << "You are a First class student, You got a Grade A ,GOOD LUCK"<< endl ;
+               }
+    else if (marks>=60)
+               {
+                   cout << "You are a Second class student , You got a Grade B, GOOD LUCK" << endl ;
+               }
+   else if (marks>=50)
+               {
+                   cout <<"You are an Average student, You got a Grade C,GOOD LUCK "<< endl ;
+               }
+   else if (marks>=40)
+               {
+                   cout <<"You Performance is below average, You got a Grade D, GOOD LUCK."<< endl ;
+               }
+   else
+               {
+                  cout<<" I'm Sorry but You Trailed. " <<name<< " ,you got a Grade F,GOOD LUCK"<< endl;
+               }
+
+
+    }
+
+
+else   {  cout << "Run for your life"<< endl ;}
+
+
+
+
+    return 0;
+}
+
